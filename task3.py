@@ -1,11 +1,20 @@
 #!/usr/bin/python3
 from turtle import *
 
-shape('triangle')
-for a in range (1, 100, 10):
- pendown()
- goto(a, a)
- for i in range(4):
-    forward(a)
+side = 20   
+step = 10 
+ 
+for i in range(10):
+    for _ in range(4):
+        forward(side)
+        left(90)
+    penup()
+    backward(step)
     right(90)
- penup()
+    forward(step)
+    left(90)
+    pendown()
+ 
+    side += 2 * step   
+ 
+done()
