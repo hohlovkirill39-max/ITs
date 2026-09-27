@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from turtle import *
 
 def circle(direction='left'):
